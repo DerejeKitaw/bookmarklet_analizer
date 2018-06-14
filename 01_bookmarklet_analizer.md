@@ -1,3 +1,5 @@
-### Extract each word used in the page
+### Create test page
 
-### Determine number of frequency in the page
+### Extract each(all) word used in the page
+
+### Determine number of times words used in the page
