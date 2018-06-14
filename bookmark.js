@@ -46,4 +46,7 @@
   });
   console.log('%c****Summery of allWords count****', consoleOutput);
   console.log(count); // returns {Bookmarker: 1, word: 6, one: 2, two: 2}Bookmarker: 1one: 2two: 2word: 6__proto__: Object
+  alert(JSON.stringify(count));
 })();
+
+// (function () {let script = document.createElement('script');script.src = 'bookmark.js';document.body.appendChild(script)})();
