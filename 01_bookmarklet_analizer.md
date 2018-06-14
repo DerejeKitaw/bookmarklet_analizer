@@ -2,16 +2,19 @@
 
 ### Extract each(all) word used in the page - hOW?
 
-> get all contents of the page. (HTMLAllCollection)
+> get all contents of the page in a body. (HTMLAllCollection)
 ```js
-console.log(document.all)
+console.log(document.body)
 // return HTMLAllCollection
 ```
 > Convert HTMLAllCollection to array
 ```js
-var pageHtmlContent = Array.prototype.slice.call( document.all );
+var pageHtmlBodyContent = document.all;
 ```
-> Iterate through the page and extract all the words
+> typeof(pageHtmlContent) - > Object
+> Exclude `<script>` tag -> TODO: At the last
+
+> Iterate through the page-body and extract all the words
 
 
 ### Determine number of times words used in the page
