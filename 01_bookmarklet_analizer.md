@@ -54,7 +54,7 @@ strinAllWords = JSON.stringify(allWords);
 
 for (var i=0; i < strinAllWords.length; i++){
   // console.log(allWords[i]);
-  console.log(strinAllWords.match(/ipsum+/g)); // return 4 works
+  console.log(strinAllWords.match(/{strinAllWords[i]}+/g)); // return 4 works
 }
 
 
