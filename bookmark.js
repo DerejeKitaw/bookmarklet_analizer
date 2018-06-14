@@ -25,7 +25,7 @@
   console.log(typeof allWords); // object
 
   console.log('%c****allWords.length****', consoleOutput);
-  console.log(`'%cNumber of allWords:'  ${allWords.length}`, consoleOutput); // return 4
+  console.log(`%cNumber of allWords:  ${allWords.length}`, consoleOutput); // return 4
 
   // count number of times each word repeat
   var count = {};
@@ -36,7 +36,29 @@
     // console.log(count[i]||0);
     //console.log(count[i]);
   });
+  console.log('%c****allWords count****', consoleOutput);
   console.log(count);
+  console.log(typeof(count));
+  console.log(JSON.stringify(count));
+  letCountString = JSON.stringify(count);
+  console.log(letCountString.length);
+  
+  // Export word counts to html
+  // for (var propt in letCountString) {
+  //   console.log(typeof(letCountString[propt]));
+    
+  // }
+  Object.keys(count).forEach(function (key, index) {
+    // console.log(key); // return the words
+    // console.log(count[key]); // return number of words
+    // console.log('%c****Words count result****', consoleOutput);
+    console.log(`%c${key} occurs:  ${count[key]} times in the page`, consoleOutput);
+    // key: the name of the object key
+    // index: the ordinal position of the key within the object 
+});
+  // for (var i = 0; i < JSON.stringify(count).length; i++) {
+  //   console.log(i);
+  // }
 
   // let obj = {};
   // for (let i of allWords) {
