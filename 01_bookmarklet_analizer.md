@@ -43,7 +43,7 @@ divElementsTextContent = [].map.call( divObjectHTMLCollection, function(node){
 
 ### Determine number of words in the `div`
 ```js
-divElementsTextContent = "Lorem ipsum ipsum ipsum ipsum, dolor sit amet consectetur adipisicing elit. Non quibusdam necessitatibus doloremque numquam nesciunt odit eligendi placeat qui harum, corporis exercitationem perferendis repellat recusandae veniam expedita repudiandae suscipit dolore cumque?Seconed div "
+divElementsTextContent = "this is demo test test output for test test"
 
 // convert the string to an array
 let allWords = divElementsTextContent.split(' ');
@@ -52,9 +52,15 @@ let allWords = divElementsTextContent.split(' ');
 strinAllWords = JSON.stringify(allWords);
 
 
-for (var i=0; i < strinAllWords.length; i++){
+// for (var i=0; i < strinAllWords.length; i++){
+//   // console.log(allWords[i]);
+//   console.log(strinAllWords.match(/{strinAllWords[i]}+/g)); // return 4 works
+// }
+
+for (var i=0; i < allWords.length; i++){
+  let word = 
   // console.log(allWords[i]);
-  console.log(strinAllWords.match(/{strinAllWords[i]}+/g)); // return 4 works
+  console.log(strinAllWords.match(/{allWords[i]}+/g)); // return 4 works
 }
 
 
