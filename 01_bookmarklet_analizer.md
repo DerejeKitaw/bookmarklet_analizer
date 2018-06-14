@@ -48,6 +48,14 @@ divElementsTextContent = "Lorem ipsum, dolor sit amet consectetur adipisicing el
 // convert the string to an array
 let allWords = divElementsTextContent.split(' ');
 
+if (allWords == null || allWords.isEmpty()) { return 0; }
+
+function numberOfOccurance(item, index) {
+  console.log(item + occurs + allWords.match(/Lorem+/))
+     
+}
+// Determine how many times words repeated
+allWords.forEach(numberOfOccurance)
 
 ```
 
